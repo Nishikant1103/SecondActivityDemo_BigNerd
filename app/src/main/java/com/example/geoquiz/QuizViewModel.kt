@@ -1,8 +1,9 @@
-package com.example.secondactivitydemo
+package com.example.geoquiz
 
 import androidx.lifecycle.ViewModel
+import com.example.secondactivitydemo.R
 
-class QuizViewModel: ViewModel() {
+class QuizViewModel : ViewModel() {
     var mCurrentIndex = 0
     var isCheating = false
     var isAnswerTrue = false
@@ -19,9 +20,11 @@ class QuizViewModel: ViewModel() {
         get() = questionBank[mCurrentIndex].answer
     val currentQuestionText: Int
         get() = questionBank[mCurrentIndex].textResId
+
     fun moveToNext() {
         mCurrentIndex = (mCurrentIndex + 1) % questionBank.size
     }
+
     fun moveToPrev() {
         mCurrentIndex = (mCurrentIndex - 1) % questionBank.size
     }

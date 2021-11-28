@@ -1,4 +1,4 @@
-package com.example.secondactivitydemo
+package com.example.geoquiz
 
 import android.app.Activity
 import android.content.Intent
@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import com.example.secondactivitydemo.R
 
 private const val KEY_INDEX = "index"
 private const val REQUEST_CODE_CHEAT = 0

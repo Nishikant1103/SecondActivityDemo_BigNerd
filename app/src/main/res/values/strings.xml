@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Second Activity Demo</string>
+    <string name="app_name">GeoQuiz</string>
     <string name="incorrect_toast">Incorrect!</string>
     <string name="correct_toast">Correct!</string>
     <string name="warning_text">Are you sure you want to do this?</string>

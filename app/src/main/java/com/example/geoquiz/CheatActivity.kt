@@ -1,4 +1,4 @@
-package com.example.secondactivitydemo
+package com.example.geoquiz
 
 import android.app.Activity
 import android.content.Context
@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import com.example.secondactivitydemo.R
 
 private const val EXTRA_ANSWER_IS_TRUE = "com.example.secondactivitydemo.answer_is_true"
 const val EXTRA_ANSWER_SHOWN = "com.example.secondactivitydemo.answer_shown"
@@ -36,7 +37,7 @@ class CheatActivity : AppCompatActivity() {
             setAnswer()
             setAnswerShownResult(true)
         }
-        if( quizViewModel.isCheating){
+        if (quizViewModel.isCheating) {
             setAnswer()
             setAnswerShownResult(true)
         }
@@ -49,7 +50,7 @@ class CheatActivity : AppCompatActivity() {
         setResult(Activity.RESULT_OK, data)
     }
 
-    private fun setAnswer(){
+    private fun setAnswer() {
         val answerText = when {
             quizViewModel.isAnswerTrue -> R.string.btn_true
             else -> R.string.btn_false
